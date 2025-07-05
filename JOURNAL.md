@@ -9,3 +9,7 @@ Created_At: 30th June,2025
 Started researching what all components will be needed to make this.
 decided to use an esp32 c3 devboard for its small size, a mpu6050, a waveshare 240x240 colour lcd.
 Found all the parts on lcsc.
+
+6th July
+12:30am -1:50am
+Started on the schematic 
