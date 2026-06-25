@@ -22,3 +22,9 @@ Fusion Files:
 
 <br>
 [https://a360.co/4w7orxZ](https://a360.co/4gCFWl9)
+<br> <br>
+Bill Of Materials:
+<br>
+You can build this in less than < 30 USD!!
+<img width="407" height="285" alt="image" src="https://github.com/user-attachments/assets/ffcb1ccd-5d50-4585-90d5-5db40b74ef77" />
+
