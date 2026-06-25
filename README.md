@@ -17,6 +17,6 @@ Make the case of the wristband.
 <br>
 Fusion Files:
 <br>
-https://a360.co/4uWkBGS
+
 <br>
-https://a360.co/4w7orxZ
+[https://a360.co/4w7orxZ](https://a360.co/4gCFWl9)
