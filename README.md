@@ -25,6 +25,7 @@ Fusion Files:
 <br> <br>
 Bill Of Materials:
 <br>
-You can build this in less than < 30 USD!!
+You can build this in less than < 30 USD!! <br> <br>
+  
 <img width="407" height="285" alt="image" src="https://github.com/user-attachments/assets/ffcb1ccd-5d50-4585-90d5-5db40b74ef77" />
 
