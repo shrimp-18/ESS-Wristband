@@ -3,7 +3,8 @@
 <h3>A gesture-controlled referee wristband that automates match timing in Taekwondo. Using an accelerometer and microcontroller, it detects the referee’s calibrated start and stop gestures and wirelessly updates the central timer visible to everyone. This system removes manual jury control, ensuring accurate, fair, and transparent timekeeping.</h3>
 
 <br> <br>
-<img width="521" height="331" alt="image" src="https://github.com/user-attachments/assets/019e3de2-68db-46d1-a2a7-ed2ff4e993ba" />
+<img width="634" height="299" alt="image" src="https://github.com/user-attachments/assets/82068360-d913-4f24-bab6-6b5becc24366" />
+
 
 <br><br>
 
