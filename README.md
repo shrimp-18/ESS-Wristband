@@ -1,14 +1,13 @@
 #<h2> ESSync Wristband</h2>
 <br>
-<br>
-
-A gesture-controlled referee wristband that automates match timing in Taekwondo. Using an accelerometer and microcontroller, it detects the referee’s calibrated start and stop gestures and wirelessly updates the central timer visible to everyone. This system removes manual jury control, ensuring accurate, fair, and transparent timekeeping.
+<h3>A gesture-controlled referee wristband that automates match timing in Taekwondo. Using an accelerometer and microcontroller, it detects the referee’s calibrated start and stop gestures and wirelessly updates the central timer visible to everyone. This system removes manual jury control, ensuring accurate, fair, and transparent timekeeping.</h3>
 
 <br> <br>
 <img width="521" height="331" alt="image" src="https://github.com/user-attachments/assets/019e3de2-68db-46d1-a2a7-ed2ff4e993ba" />
 
 <br><br>
-Why is ESSync Neded?<br>
+
+<h2>Why is ESSync Neded?</h2><br>
 In Taekwondo matches, round timing is controlled by officials sitting at the jury
 table rather than by the referee overseeing the bout. This separation often leads to
 inconsistencies in the start and stop of the timer;  whether due to human delay,
@@ -19,14 +18,14 @@ automated, and transparent timing system that ensures real-time
 synchronization and impartial timekeeping.
 
 <br>
-So Whats the solution?!<br>
--A gesture-controlled wristband worn by referees to automate match timing.
--Uses an accelerometer and microcontroller to detect specific referee gestures.
--The downward “stop” motion of the hand instantly triggers the central arena timer wirelessly.
--Calibrated for each referee to prevent false detections and ensure precision.
--Removes jury dependency, ensuring fair, transparent, and real-time timekeeping.
+<h2>So Whats the solution?!</h2><br>
+-A gesture-controlled wristband worn by referees to automate match timing.<br>
+-Uses an accelerometer and microcontroller to detect specific referee gestures.<br>
+-The downward “stop” motion of the hand instantly triggers the central arena timer wirelessly.<br>
+-Calibrated for each referee to prevent false detections and ensure precision.<br>
+-Removes jury dependency, ensuring fair, transparent, and real-time timekeeping.<br>
 -The timer part of taekwondo matches isn’t automated yet and really needs a cheap and
-effective solution.
+effective solution.<br>
 -Wristbands are easy to make and reliable
 <br><br>
 
@@ -34,20 +33,16 @@ effective solution.
 <br>
 <img width="563" height="274" alt="image" src="https://github.com/user-attachments/assets/d5d8126c-cdaf-49da-ae4d-81a54af5c5bb" />
 
-Work Left to Do:
-<br>
-Make the case of the wristband.
+
+
 <br>
 <br>
 Fusion Files:
 <br>
-
-<br>
-[https://a360.co/4w7orxZ](https://a360.co/4gCFWl9)
+https://a360.co/4gCFWl9
 <br> <br>
-Bill Of Materials:
+<h2>Bill Of Materials:</h2>
 <br>
-You can build this in less than < 30 USD!! <br> <br>
-  
-<img width="407" height="285" alt="image" src="https://github.com/user-attachments/assets/ffcb1ccd-5d50-4585-90d5-5db40b74ef77" />
+You can build this in less than < 30 USD!! <br> 
+  <img width="407" height="285" alt="image" src="https://github.com/user-attachments/assets/ffcb1ccd-5d50-4585-90d5-5db40b74ef77" />
 
