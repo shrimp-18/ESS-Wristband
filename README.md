@@ -1,4 +1,4 @@
-<img width="2209" height="552" alt="image" src="https://github.com/user-attachments/assets/75bd674e-1648-47eb-8d55-133c612a67d3" /># ESSync Wristband
+# ESSync Wristband
 
 A gesture-controlled referee wristband that automates match timing in Taekwondo. Using an accelerometer and microcontroller, it detects the referee’s calibrated start and stop gestures and wirelessly updates the central timer visible to everyone. This system removes manual jury control, ensuring accurate, fair, and transparent timekeeping.
 
