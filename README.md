@@ -87,7 +87,74 @@ https://a360.co/4gCFWl9
 
 ---
 ## How to Build
-Get the PCBA manufactured and buy all the external components listed in the BOM. All components have to be attached to their respective connectors. (Take reference from the schematic) The ESP 32 Dev Kit Module will have to be soldered along with its connector pins to the bottom PCB. After attaching all components, upload the firmware to the ESP32-C3 using the Arduino IDE. ESSync now works! You can get the case 3D printed using the CAD files so you can wear it as a wristband. The band/strap isnt 3d printed </3
+
+
+## 1. Manufacture the PCBs
+Fabricate both the **Top PCB** and **Bottom PCB** using the KiCad Files provided.
+
+---
+
+## 2. Prepare the Components
+
+Purchase all required components listed in the **Bill of Materials (BOM)**.
+
+---
+
+## 3. Solder the Bottom PCB
+
+Assemble the Bottom PCB first.
+Solder All components and connectors to the bottom PCB according to the KiCad files given, and attach their respective components.
+
+Refer to the schematic for the correct connector orientation and pin mapping.
+
+---
+
+## 4. Assemble the Top PCB
+
+1. Solder the female headers for the ESP32 connector(on the bottom side).
+2. Solder the male headers for the SPI Screen(on the top side).
+3. Connect the SPI Screen.
+
+---
+
+## 5. Join the Two PCBs
+
+Carefully align the connector pins and stack the 2 PCBs.
+
+---
+
+## 6. Upload the Firmware
+
+1. Connect the ESP32-C3 to your computer using a USB cable.
+2. Open the firmware in the Arduino IDE.
+3. Select **ESP32-C3 Dev Module** as the target board.
+4. Choose the correct serial port.
+5. Compile and upload the firmware.
+
+## 7. Assemble the Enclosure
+
+3D-print the enclosure using the CAD files.
+
+Install the assembled electronics inside the case.
+
+---
+
+## 8. Attach a Wrist Strap
+
+The wrist strap is **not** 3D printed </3
+It's a DIY thing you need to do with a leather sheet.
+Please add a strap to the case! (I will be updating this with a better option in the future).
+---
+
+## 9. Power On
+
+If assembled correctly, ESSync should be working! YAY!
+---
+
+## How to Use
+
+You'll need to calibrate your gand gestures with the watch so it can record those values and stop/start the timer the next time you use it.
+
 
 ## Bill of Materials
 
@@ -110,3 +177,4 @@ Get the PCBA manufactured and buy all the external components listed in the BOM.
 | 15 | C1 | 0.1µF | 0603 Capacitor | Decoupling Capacitor | 1 | $0.04 | https://robu.in/product/0603b104j500nt-fh-50v-100nf-x7r%C2%B15-0603-multilayer-ceramic-capacitors-mlcc-smd-smt-rohs/ |
 | 16 | — | — | PCB Fabrication | Two Custom PCBs | 2 | $2.00 | https://cart.jlcpcb.com/quote |
 | 17 | — | — | 3D Printed Case | Enclosure | 1 | $4.00 | https://zbotic.in/product/online-3d-printing-service |
+| 18 | — | — | Leather Strap | Enclosure | 1 | $0.40 | https://www.desertcart.in/products/425174482-genuine-leather-strip-1-2-inch-wide-72-inches-long |
