@@ -19,11 +19,9 @@ A gesture-controlled referee wristband that automates match timing in Taekwondo.
 <br>
 
 
-<img width="629" height="353" alt="image" src="https://github.com/user-attachments/assets/d6a00bb7-e837-413b-bf4c-c97f77be63b0" />
+<img width="588" height="328" alt="image" src="https://github.com/user-attachments/assets/ddb921ac-2ccd-44aa-aa3c-4f68d9c3d26a" />
 
-
-<img width="596" height="331" alt="image" src="https://github.com/user-attachments/assets/9be1da9a-511b-4898-b76c-8067cb57a99e" />
-
+<img width="551" height="342" alt="image" src="https://github.com/user-attachments/assets/61bfc489-0fd6-4e77-9425-d20bfbcab55e" />
 
 
 
