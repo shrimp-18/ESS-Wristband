@@ -136,6 +136,8 @@ Carefully align the connector pins and stack the 2 PCBs.
 3D-print the enclosure using the CAD files.
 
 Install the assembled electronics inside the case.
+No screws are required to mount as the pcb is snug in the case.
+Glue Magnets to the base and lid of the case so that it can remain closed.
 
 ---
 
