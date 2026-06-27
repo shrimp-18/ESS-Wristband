@@ -87,7 +87,69 @@ https://a360.co/4gCFWl9
 
 ---
 ## How to Build
-Get the PCBA manufactured and buy all the external components listed in the BOM. All components have to be attached to their respective connectors. (Take reference from the schematic) The ESP 32 Dev Kit Module will have to be soldered along with its connector pins to the bottom PCB. After attaching all components, upload the firmware to the ESP32-C3 using the Arduino IDE. ESSync now works! You can get the case 3D printed using the CAD files so you can wear it as a wristband. The band/strap isnt 3d printed </3
+
+
+## 1. Manufacture the PCBs
+Fabricate both the **Top PCB** and **Bottom PCB** using the KiCad Files provided.
+
+---
+
+## 2. Prepare the Components
+
+Purchase all required components listed in the **Bill of Materials (BOM)**.
+
+---
+
+## 3. Solder the Bottom PCB
+
+Assemble the Bottom PCB first.
+Solder All components and connectors to the bottom PCB according to the KiCad files given, and attach their respective components.
+
+Refer to the schematic for the correct connector orientation and pin mapping.
+
+---
+
+## 4. Assemble the Top PCB
+
+1. Solder the female headers for the ESP32 connector(on the bottom side).
+2. Solder the male headers for the SPI Screen(on the top side).
+3. Connect the SPI Screen.
+
+---
+
+## 5. Join the Two PCBs
+
+Carefully align the connector pins and stack the 2 PCBs.
+
+---
+
+## 6. Upload the Firmware
+
+1. Connect the ESP32-C3 to your computer using a USB cable.
+2. Open the firmware in the Arduino IDE.
+3. Select **ESP32-C3 Dev Module** as the target board.
+4. Choose the correct serial port.
+5. Compile and upload the firmware.
+
+## 7. Assemble the Enclosure
+
+3D-print the enclosure using the CAD files.
+
+Install the assembled electronics inside the case.
+
+---
+
+## 8. Attach a Wrist Strap
+
+The wrist strap is **not** 3D printed </3
+Please add a strap to the case! (I will be updating this with some better option in futute).
+
+---
+
+## 9. Power On
+
+If assembled correctly, ESSync should be working! YAY!
+
 
 ## Bill of Materials
 
