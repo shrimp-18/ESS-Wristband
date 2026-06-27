@@ -1,0 +1,11 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define MATCH_TIME_SECONDS 180
+
+#define SCREEN_WIDTH 240
+#define SCREEN_HEIGHT 240
+
+#define SPLASH_TIME 2000
+
+#endif
