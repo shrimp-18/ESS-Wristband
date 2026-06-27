@@ -22,9 +22,8 @@ A gesture-controlled referee wristband that automates match timing in Taekwondo.
 <img width="629" height="353" alt="image" src="https://github.com/user-attachments/assets/d6a00bb7-e837-413b-bf4c-c97f77be63b0" />
 
 
-<img width="320" height="334" alt="image" src="https://github.com/user-attachments/assets/44a1ed3c-6591-4d5e-9b74-fb7fade517a7" />
-
 <img width="596" height="331" alt="image" src="https://github.com/user-attachments/assets/9be1da9a-511b-4898-b76c-8067cb57a99e" />
+
 
 
 
@@ -65,18 +64,20 @@ There is a critical need for a referee-operated, automated, and transparent timi
 ---
 
 ## Top PCB
+<img width="402" height="355" alt="image" src="https://github.com/user-attachments/assets/c3c154cf-ce4e-4047-827a-db1286a75ac4" />
 
-![Top PCB](https://github.com/user-attachments/assets/fce5ac67-f28a-49bb-b9c6-673578531011)
+<img width="645" height="350" alt="image" src="https://github.com/user-attachments/assets/74c23aac-74e8-4ab8-a565-1ca242867356" />
 
-![Top PCB 3D](https://github.com/user-attachments/assets/78d6440d-ddb2-49bf-ba75-79f2bc257070)
 
 ---
 
 ## Bottom PCB
 
-![Bottom PCB](https://github.com/user-attachments/assets/3b48a4ee-9184-496e-b987-144083d6660e)
+<img width="485" height="358" alt="image" src="https://github.com/user-attachments/assets/57582eb2-00df-4f75-9e76-06e238837d03" />
 
-![Bottom PCB 3D](https://github.com/user-attachments/assets/fe39cb69-ffb3-4126-8afb-bab32b30db9e)
+
+<img width="655" height="374" alt="image" src="https://github.com/user-attachments/assets/6d9d1184-c0f3-431e-a021-7065daf4add2" />
+
 
 The project is made with two PCBs. The upper PCB holds the display, while the bottom PCB contains the MCU and all other components. This approach keeps the wristband compact without making it too wide. In future revisions, I plan to make it even smaller.
 
@@ -144,19 +145,22 @@ Glue Magnets to the base and lid of the case so that it can remain closed.
 
 ## 8. Attach a Wrist Strap
 
+
 The wrist strap is **not** 3D printed </3
 It's a DIY thing you need to do with a leather sheet.
-Please add a strap to the case! (I will be updating this with a better option in the future).
+Please add a strap to the bottom case through the space given underneath (I will be updating this with a better option in the future).
+
 ---
 
 ## 9. Power On
 
-If assembled correctly, ESSync should be working! YAY!
----
 
+If assembled correctly, ESSync should be working! YAY!
+
+---
 ## How to Use
 
-You'll need to calibrate your gand gestures with the watch so it can record those values and stop/start the timer the next time you use it.
+You'll need to calibrate your hand gestures with the watch so it can record those values and stop/start the timer the next time you use it.
 
 
 ## Bill of Materials
@@ -179,5 +183,6 @@ You'll need to calibrate your gand gestures with the watch so it can record thos
 | 14 | — | — | 3.7V LiPo Battery | External Module | 1 | $1.69 | https://robocraze.com/products/450mah-3-7v-lipo-rechargeable-battery |
 | 15 | C1 | 0.1µF | 0603 Capacitor | Decoupling Capacitor | 1 | $0.04 | https://robu.in/product/0603b104j500nt-fh-50v-100nf-x7r%C2%B15-0603-multilayer-ceramic-capacitors-mlcc-smd-smt-rohs/ |
 | 16 | — | — | PCB Fabrication | Two Custom PCBs | 2 | $2.00 | https://cart.jlcpcb.com/quote |
-| 17 | — | — | 3D Printed Case | Enclosure | 1 | $4.00 | https://zbotic.in/product/online-3d-printing-service |
-| 18 | — | — | Leather Strap | Enclosure | 1 | $0.40 | https://www.desertcart.in/products/425174482-genuine-leather-strip-1-2-inch-wide-72-inches-long |
+| 17 | — | — | 3D Printed Case | External | 1 | $4.00 | https://zbotic.in/product/online-3d-printing-service |
+| 18 | — | — | Leather Strap | External | 1 | $0.40 | https://www.desertcart.in/products/425174482-genuine-leather-strip-1-2-inch-wide-72-inches-long |
+| 19 | — | — | Magnets | Externsl | 1 | $0.40 | https://www.prayogindia.in/product/neodymium-magnet-3mm-x-1mm-n35-super-strong-magnets/ |
