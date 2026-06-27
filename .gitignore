@@ -1,0 +1,4 @@
+*.kicad_prl
+/.history/
+PCB\ESS_Bottom\fp-info-cache
+PCB\ESS_Top\fp-info-cache
