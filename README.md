@@ -18,13 +18,14 @@ A gesture-controlled referee wristband that automates match timing in Taekwondo.
 
 <br>
 
-![Wristband CAD](https://github.com/user-attachments/assets/7207a4ab-dc7d-4716-93c8-1727c195331d)
----
-<img width="512" height="332" alt="image" src="https://github.com/user-attachments/assets/49a5180f-3bab-4dd1-b1de-939b9badb8f5" />
+
+<img width="629" height="353" alt="image" src="https://github.com/user-attachments/assets/d6a00bb7-e837-413b-bf4c-c97f77be63b0" />
+
 
 <img width="320" height="334" alt="image" src="https://github.com/user-attachments/assets/44a1ed3c-6591-4d5e-9b74-fb7fade517a7" />
 
-<img width="483" height="355" alt="image" src="https://github.com/user-attachments/assets/585ff83c-5480-4b92-90f9-9aae04c515ba" />
+<img width="596" height="331" alt="image" src="https://github.com/user-attachments/assets/9be1da9a-511b-4898-b76c-8067cb57a99e" />
+
 
 
 
@@ -136,6 +137,8 @@ Carefully align the connector pins and stack the 2 PCBs.
 3D-print the enclosure using the CAD files.
 
 Install the assembled electronics inside the case.
+No screws are required to mount as the pcb is snug in the case.
+Glue Magnets to the base and lid of the case so that it can remain closed.
 
 ---
 
