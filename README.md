@@ -13,7 +13,8 @@ A gesture-controlled referee wristband that automates match timing in Taekwondo.
 - The central timer stops, and so do all the other sensors.
 - Similar process repeats when the referee wants to restart the match.
 
-![Zine](https://github.com/user-attachments/assets/59e18165-39b0-43ca-adf2-a6b3911683fb)
+<img width="420" height="595" alt="zine2" src="https://github.com/user-attachments/assets/47ce002c-b177-4619-a68f-e5cd7258e9ac" />
+
 
 <br>
 
