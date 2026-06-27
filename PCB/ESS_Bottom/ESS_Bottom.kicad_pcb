@@ -116,8 +116,7 @@
 			(at 11.35 28.47 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "2cd13555-9d44-4d61-a57e-0d49614d6150")
+			(uuid "46556362-0c5d-435b-844c-b4e26ea5d2f5")
 			(effects
 				(font
 					(size 1 1)
@@ -129,8 +128,7 @@
 			(at 11.53 19.58 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "9ad5ab07-593a-4fbf-a6f6-34530dc9daa2")
+			(uuid "fdcf5b4e-3256-4fb8-8e37-bbb417a15c0e")
 			(effects
 				(font
 					(size 1 1)
@@ -142,7 +140,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d79189cd-f365-4abe-9f3d-ca5f15fccefa")
+			(uuid "b72a5ec8-40d1-476f-a27b-212d5d29c35b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -154,7 +152,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8ff65180-9e02-494a-9869-60630f3c713d")
+			(uuid "2887c58a-582d-44db-8666-b12c1bad1019")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -743,9 +741,8 @@
 		(descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x08 2.54mm single row")
 		(property "Reference" "MPU6050"
-			(at -6.05 8.35 90)
+			(at -5.565 -0.715 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "85688563-abb6-4a5a-b2b1-9b068850b22c")
 			(effects
 				(font
@@ -755,9 +752,8 @@
 			)
 		)
 		(property "Value" "Conn_01x08"
-			(at 0 20.16 90)
+			(at -6.835 6.465 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "dfc28691-7163-4a89-b627-08b8713bd335")
 			(effects
 				(font
@@ -1048,7 +1044,6 @@
 		(property "Reference" "Battery1"
 			(at 1 -2.9 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "425df0f0-15e5-4ce8-82ed-1f534b8a0ddc")
 			(effects
 				(font
@@ -1060,7 +1055,6 @@
 		(property "Value" "Conn_01x02"
 			(at 1 4 0)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "c0f47070-98b5-4e00-bf80-9ac750b6700d")
 			(effects
 				(font
@@ -1487,10 +1481,9 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J11"
-			(at 0 -1.61 90)
+			(at 0.1 -2.07 90)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "286814df-4f04-4c0a-b3c8-9b872ac54641")
+			(uuid "d0851647-8e82-4e35-8523-fca8670f589d")
 			(effects
 				(font
 					(size 1 1)
@@ -1499,10 +1492,9 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.15 0.83 90)
+			(at 6.24 -0.06 90)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "a492f86f-cf6d-449d-ba94-b941e392c30d")
+			(uuid "8bf762f1-2a79-4466-b859-29ae883cd1a2")
 			(effects
 				(font
 					(size 1 1)
@@ -1514,7 +1506,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a65d52b6-652d-429c-9997-0d6ffb8ec10f")
+			(uuid "8779b219-6cb4-434e-b28e-03d54b91ae6e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1518,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a7f539b-5e66-4c41-b1e3-d3ca0aa9a461")
+			(uuid "a45b5fe1-e636-41e8-932f-f90a4d08f6cb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1726,7 +1718,6 @@
 		(property "Reference" "S1"
 			(at 0.425 -2.635 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "7c0fac0d-1802-4263-a445-08a8e0965ba9")
 			(effects
 				(font
@@ -1736,9 +1727,8 @@
 			)
 		)
 		(property "Value" "Tactile Button, 160gf"
-			(at 0.465 4.815 0)
+			(at 0.145 2.605 0)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "7bdbd4d2-be81-4529-9c19-3fb2e772d195")
 			(effects
 				(font
@@ -2274,7 +2264,6 @@
 		(property "Reference" "J10"
 			(at 0 -1.61 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "0fcbea2e-eee4-472e-bcd3-6cca22c4b422")
 			(effects
 				(font
@@ -2286,7 +2275,6 @@
 		(property "Value" "Conn_01x01"
 			(at 0 1.61 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "c66a54d7-48b9-4c4c-90c7-014ffe483cf1")
 			(effects
 				(font
@@ -2523,7 +2511,6 @@
 		(property "Reference" "SW1"
 			(at -6.21 1.035 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "971113b4-5e43-4ccf-be99-ba6b9cdbd359")
 			(effects
 				(font
@@ -2535,7 +2522,6 @@
 		(property "Value" "SW_Slide_DPDT"
 			(at 10.26 1.305 0)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "1f6f508b-2c24-4601-8060-f7bcd55676b9")
 			(effects
 				(font
@@ -2938,7 +2924,6 @@
 		(property "Reference" "J8"
 			(at 0 -1.61 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "075a1ab1-a344-461a-b2be-ac47860c7b6c")
 			(effects
 				(font
@@ -2948,9 +2933,8 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 0 1.61 90)
+			(at 2.415 1.795 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "859fec98-c31e-475e-85e5-a7ad3b38e8ea")
 			(effects
 				(font
@@ -3186,10 +3170,9 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J12"
-			(at 0 -1.61 90)
+			(at -0.045 2.085 90)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "da0feb83-3238-4787-8f26-186d0562c5b0")
+			(uuid "a9b57ab5-8442-44c0-8a74-11fe6540312a")
 			(effects
 				(font
 					(size 1 1)
@@ -3198,10 +3181,9 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.15 0.83 90)
+			(at 6.045 0.145 90)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "19bbba50-e226-47fe-b3ef-e5754ed8fda7")
+			(uuid "89d930f5-af26-4845-aa33-1c836928264d")
 			(effects
 				(font
 					(size 1 1)
@@ -3213,7 +3195,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a017ffb4-010b-4d47-af06-9f92f3d53836")
+			(uuid "d8e91ab3-20f9-4ec7-8f37-592dcbb806c9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +3207,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77baebf9-4ef2-4006-82a7-286de8d948ff")
+			(uuid "eed51317-75a7-41d4-a276-7073d9581a1a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3573,7 +3555,7 @@
 			(uuid "d829d9d5-c9be-4e13-bbb9-91d40dc0dd1d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0.005 1.265 90)
 			(layer "F.Fab")
 			(uuid "dae386db-c8c8-435c-90b3-e2e75b9dc935")
 			(effects
@@ -3621,9 +3603,8 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J6"
-			(at 0 -1.61 90)
+			(at -0.045 1.875 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "810e3f3a-2561-45e3-943e-19b8cd84fcd1")
 			(effects
 				(font
@@ -3633,9 +3614,8 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.15 0.83 90)
+			(at 6.045 -0.155 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "fe4f6e0e-19a1-4daf-b715-05deeece0447")
 			(effects
 				(font
@@ -3860,9 +3840,8 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J5"
-			(at 0 -1.61 90)
+			(at 0.135 -1.925 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "3cd6e0f9-21ad-419f-aa6a-c5a932783fef")
 			(effects
 				(font
@@ -3872,9 +3851,8 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.15 0.83 90)
+			(at 5.825 0.165 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "2068849b-719c-4fd4-ba6b-fc6672cb025e")
 			(effects
 				(font
@@ -4101,7 +4079,6 @@
 		(property "Reference" "J7"
 			(at 0 -1.61 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "34218da0-c1ba-473f-a9e5-fa24f2dcc33b")
 			(effects
 				(font
@@ -4111,9 +4088,8 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 0 1.61 90)
+			(at 2.365 1.655 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "4057cc06-8fd2-4bce-95c8-f670fac01b5d")
 			(effects
 				(font
@@ -4351,7 +4327,6 @@
 		(property "Reference" "J9"
 			(at 0 -1.61 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "b822ee2c-a5e6-484f-9e9f-c14d64a8be75")
 			(effects
 				(font
@@ -4363,7 +4338,6 @@
 		(property "Value" "Conn_01x01"
 			(at 0 1.61 90)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "5459cf20-45f9-4d9e-a1c7-49ebc15eb9cb")
 			(effects
 				(font
