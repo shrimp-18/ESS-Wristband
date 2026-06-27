@@ -12,8 +12,7 @@ A gesture-controlled referee wristband that automates match timing in Taekwondo.
 - ESSync senses this swift hand movement and sends a signal to the central timer to stop.
 - The central timer stops, and so do all the other sensors.
 - Similar process repeats when the referee wants to restart the match.
-
-<img width="420" height="595" alt="zine2" src="https://github.com/user-attachments/assets/47ce002c-b177-4619-a68f-e5cd7258e9ac" />
+<img width="420" height="595" alt="zine3" src="https://github.com/user-attachments/assets/90ddc32b-bdd7-4aac-a49e-6c9121ed8df6" />
 
 
 <br>
