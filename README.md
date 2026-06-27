@@ -24,9 +24,7 @@ A gesture-controlled referee wristband that automates match timing in Taekwondo.
 ## Why is ESSync Needed?
 
 In Taekwondo matches, round timing is controlled by officials sitting at the jury table rather than by the referee overseeing the bout. This separation often leads to inconsistencies in the start and stop of the timer, whether due to human delay, miscommunication, or, in some cases, bias.
-
 As a result, athletes can be unfairly advantaged or disadvantaged by inaccurate match durations, compromising the fairness and integrity of the competition.
-
 There is a critical need for a referee-operated, automated, and transparent timing system that ensures real-time synchronisation and impartial timekeeping.
 
 ---
@@ -78,6 +76,8 @@ The project is made with two PCBs. The upper PCB holds the display, while the bo
 https://a360.co/4gCFWl9
 
 ---
+## How to Build
+Get the PCBA manufactured and buy all the external components listed in the BOM. All components have to be attached to their respective connectors. (Take reference from the schematic) The ESP 32 Dev Kit Module will have to be soldered along with its connector pins to the bottom PCB. After attaching all components, upload the firmware to the ESP32-C3 using the Arduino IDE. ESSync now works! You can get the case 3D printed using the CAD files so you can wear it as a wristband. The band/strap isnt 3d printed </3
 
 ## Bill of Materials
 
