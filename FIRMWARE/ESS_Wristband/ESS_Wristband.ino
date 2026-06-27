@@ -1,8 +1,4 @@
 
-//* ESSync Wristband
-//* Firmware Version 1
-
-
 #include <Wire.h>
 #include <SPI.h>
 
@@ -12,26 +8,17 @@
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
 
-
-
-
-
-// PIN DEFINITIONS
-// TFT
 #define TFT_CS    -1
 #define TFT_DC     3
 #define TFT_RST    4
 #define TFT_MOSI   6
 #define TFT_SCLK   7
 
-// MPU6050
 #define MPU_SDA    8
 #define MPU_SCL    9
 
-// Button
 #define BUTTON_PIN 2
 
-// DISPLAY
 Adafruit_ST7789 tft =
 Adafruit_ST7789(
 TFT_CS,
@@ -39,13 +26,8 @@ TFT_DC,
 TFT_RST
 );
 
-
-
-// MPU
 Adafruit_MPU6050 mpu;
 
-
-// SYSTEM STATE
 enum MatchState
 {
 READY,
@@ -55,8 +37,6 @@ PAUSED
 
 MatchState state = READY;
 
-
-// TIMER
 const uint16_t MATCH_TIME = 180;
 
 uint16_t remainingTime = MATCH_TIME;
@@ -65,7 +45,6 @@ unsigned long lastSecond = 0;
 
 bool timerRunning = false;
 
-// SENSOR DATA
 float ax = 0;
 float ay = 0;
 float az = 0;
@@ -73,44 +52,27 @@ float gx = 0;
 float gy = 0;
 float gz = 0;
 
-
-// BATTERY
 uint8_t batteryPercent = 100;
 
-// BUTTON
 bool lastButton = HIGH;
 
 unsigned long lastDebounce = 0;
 
-
-// DRAW SPLASH
 void drawSplash()
 {
 
 tft.fillScreen(ST77XX_BLACK);
-
 tft.setTextColor(ST77XX_WHITE);
-
 tft.setTextSize(3);
-
 tft.setCursor(70,30);
-
 tft.println("ESS");
-
 tft.setTextSize(2);
-
 tft.setCursor(18,90);
-
 tft.println("Electronic");
-
 tft.setCursor(42,118);
-
 tft.println("Scoring");
-
 tft.setCursor(50,146);
-
 tft.println("System");
-
 tft.drawLine(
 20,
 180,
@@ -120,27 +82,16 @@ ST77XX_BLUE
 );
 
 tft.setCursor(28,195);
-
 tft.setTextColor(ST77XX_CYAN);
-
 tft.println("Initializing...");
 }
 
-
-
-
-// DRAW HOME SCREEN
 void drawHome()
 {
-
 tft.fillScreen(ST77XX_BLACK);
-
 tft.setTextSize(2);
-
 tft.setTextColor(ST77XX_WHITE);
-
 tft.setCursor(55,10);
-
 tft.print("ROUND 1");
 
 drawTimer();
@@ -150,10 +101,6 @@ drawStatus();
 drawBattery();
 
 }
-
-
-
-// DRAW TIMER
 void drawTimer()
 {
 
@@ -186,9 +133,6 @@ tft.setCursor(
 tft.print(buf);
 
 }
-
-
-// DRAW STATUS
 void drawStatus()
 {
 
@@ -238,11 +182,6 @@ break;
 }
 
 }
-
-
-
-
-// DRAW BATTERY
 void drawBattery()
 {
 
@@ -292,8 +231,6 @@ ST77XX_GREEN
 );
 
 }
-
-// UPDATE TIMER
 void updateTimer()
 {
     if (!timerRunning)
@@ -317,9 +254,6 @@ void updateTimer()
         }
     }
 }
-
-
-// BUTTON HANDLER
 
 void checkButton()
 {
