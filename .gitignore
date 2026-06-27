@@ -5,3 +5,4 @@
 **/fp-info-cache
 *-backups/
 *-esp32.esp32.esp32/
+/src/Firmware/ESS_Wristband/build/
