@@ -1,48 +1,40 @@
 
 #include <Wire.h>
 #include <SPI.h>
-
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
-
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
-
 #define TFT_CS    -1
 #define TFT_DC     3
 #define TFT_RST    4
 #define TFT_MOSI   6
 #define TFT_SCLK   7
-
 #define MPU_SDA    8
 #define MPU_SCL    9
-
 #define BUTTON_PIN 2
 
 Adafruit_ST7789 tft =
 Adafruit_ST7789(
-TFT_CS,
-TFT_DC,
-TFT_RST
+    TFT_CS,
+    TFT_DC,
+    TFT_RST
 );
 
 Adafruit_MPU6050 mpu;
 
 enum MatchState
 {
-READY,
-RUNNING,
-PAUSED
+    READY,
+    RUNNING,
+    PAUSED
 };
 
 MatchState state = READY;
 
 const uint16_t MATCH_TIME = 180;
-
 uint16_t remainingTime = MATCH_TIME;
-
 unsigned long lastSecond = 0;
-
 bool timerRunning = false;
 
 float ax = 0;
@@ -53,182 +45,159 @@ float gy = 0;
 float gz = 0;
 
 uint8_t batteryPercent = 100;
-
 bool lastButton = HIGH;
-
 unsigned long lastDebounce = 0;
 
 void drawSplash()
 {
 
-tft.fillScreen(ST77XX_BLACK);
-tft.setTextColor(ST77XX_WHITE);
-tft.setTextSize(3);
-tft.setCursor(70,30);
-tft.println("ESS");
-tft.setTextSize(2);
-tft.setCursor(18,90);
-tft.println("Electronic");
-tft.setCursor(42,118);
-tft.println("Scoring");
-tft.setCursor(50,146);
-tft.println("System");
-tft.drawLine(
-20,
-180,
-220,
-180,
-ST77XX_BLUE
-);
+    tft.fillScreen(ST77XX_BLACK);
+    tft.setTextColor(ST77XX_WHITE);
+    tft.setTextSize(3);
+    tft.setCursor(70,30);
+    tft.println("ESS");
+    tft.setTextSize(2);
+    tft.setCursor(18,90);
+    tft.println("Electronic");
+    tft.setCursor(42,118);
+    tft.println("Scoring");
+    tft.setCursor(50,146);
+    tft.println("System");
+    tft.drawLine(
+        20,
+        180,
+        220,
+        180,
+        ST77XX_BLUE
+    );
 
-tft.setCursor(28,195);
-tft.setTextColor(ST77XX_CYAN);
-tft.println("Initializing...");
+    tft.setCursor(28,195);
+    tft.setTextColor(ST77XX_CYAN);
+    tft.println("Initializing...");
 }
 
 void drawHome()
 {
-tft.fillScreen(ST77XX_BLACK);
-tft.setTextSize(2);
-tft.setTextColor(ST77XX_WHITE);
-tft.setCursor(55,10);
-tft.print("ROUND 1");
+    tft.fillScreen(ST77XX_BLACK);
+    tft.setTextSize(2);
+    tft.setTextColor(ST77XX_WHITE);
+    tft.setCursor(55,10);
+    tft.print("ROUND 1");
 
-drawTimer();
-
-drawStatus();
-
-drawBattery();
+    drawTimer();
+    drawStatus();
+    drawBattery();
 
 }
 void drawTimer()
 {
 
-char buf[10];
+    char buf[10];
 
-sprintf(
-buf,
-"%02d:%02d",
-remainingTime/60,
-remainingTime%60
-);
+    sprintf(
+        buf,
+        "%02d:%02d",
+        remainingTime/60,
+        remainingTime%60
+    );
 
-tft.fillRect(
-20,
-55,
-200,
-70,
-ST77XX_BLACK
-);
+    tft.fillRect(
+        20,
+        55,
+        200,
+        70,
+        ST77XX_BLACK
+    );
 
-tft.setTextColor(ST77XX_WHITE);
+    tft.setTextColor(ST77XX_WHITE);
+    tft.setTextSize(5);
 
-tft.setTextSize(5);
+    tft.setCursor(
+        25,
+        65
+    );
 
-tft.setCursor(
-25,
-65
-);
-
-tft.print(buf);
+    tft.print(buf);
 
 }
 void drawStatus()
 {
 
-tft.fillRect(
-0,
-145,
-240,
-30,
-ST77XX_BLACK
-);
+    tft.fillRect(
+        0,
+        145,
+        240,
+        30,
+        ST77XX_BLACK
+    );
 
-tft.setTextSize(2);
+    tft.setTextSize(2);
 
-switch(state)
-{
+    switch(state)
+    {
 
-case READY:
+        case READY:
+        tft.setTextColor(ST77XX_BLUE);
+        tft.setCursor(72,150);
+        tft.print("READY");
+        break;
+        
+        case RUNNING:
+        tft.setTextColor(ST77XX_GREEN);
+        tft.setCursor(55,150);
+        tft.print("RUNNING");
+        break;
 
-tft.setTextColor(ST77XX_BLUE);
+        case PAUSED:
+        tft.setTextColor(ST77XX_YELLOW);
+        tft.setCursor(60,150);
+        tft.print("PAUSED");
+        break;
 
-tft.setCursor(72,150);
-
-tft.print("READY");
-
-break;
-
-case RUNNING:
-
-tft.setTextColor(ST77XX_GREEN);
-
-tft.setCursor(55,150);
-
-tft.print("RUNNING");
-
-break;
-
-case PAUSED:
-
-tft.setTextColor(ST77XX_YELLOW);
-
-tft.setCursor(60,150);
-
-tft.print("PAUSED");
-
-break;
-
-}
+    }
 
 }
 void drawBattery()
 {
 
-tft.fillRect(
-15,
-205,
-210,
-25,
-ST77XX_BLACK
-);
+    tft.fillRect(
+        15,
+        205,
+        210,
+        25,
+        ST77XX_BLACK
+    );
 
-tft.setTextSize(1);
+    tft.setTextSize(1);
+    tft.setTextColor(ST77XX_CYAN);
+    tft.setCursor(15,210);
+    tft.print("Battery ");
+    tft.print(batteryPercent);
+    tft.print("%");
+    tft.drawRect(
+        170,
+        208,
+        42,
+        12,
+        ST77XX_WHITE
+    );
 
-tft.setTextColor(ST77XX_CYAN);
+    int width =
+    map(
+        batteryPercent,
+        0,
+        100,
+        0,
+        40
+    );
 
-tft.setCursor(15,210);
-
-tft.print("Battery ");
-
-tft.print(batteryPercent);
-
-tft.print("%");
-
-tft.drawRect(
-170,
-208,
-42,
-12,
-ST77XX_WHITE
-);
-
-int width =
-map(
-batteryPercent,
-0,
-100,
-0,
-40
-);
-
-tft.fillRect(
-171,
-209,
-width,
-10,
-ST77XX_GREEN
-);
+    tft.fillRect(
+        171,
+        209,
+        width,
+        10,
+        ST77XX_GREEN
+    );
 
 }
 void updateTimer()
@@ -364,33 +333,23 @@ void drawIMUDebug()
         25,
         ST77XX_BLACK
     );
-
     tft.setTextSize(1);
-
     tft.setTextColor(ST77XX_WHITE);
-
     tft.setCursor(5,180);
-
     tft.print("AZ:");
-
     tft.print(az,1);
-
     tft.print(" GX:");
-
     tft.print(gx,1);
 }
 void setup()
 {
     Serial.begin(115200);
-
     Serial.println();
-    Serial.println("=================================");
-    Serial.println(" ESS Referee Wristband");
-    Serial.println(" Firmware v0.1");
-    Serial.println("=================================");
-
+    Serial.println("*********************************");
+    Serial.println(" ESSync Wristband");
+    Serial.println(" Firmware 1");
+    Serial.println("*********************************");
     pinMode(BUTTON_PIN, INPUT_PULLUP);
-
 
     SPI.begin(
         TFT_SCLK,
@@ -399,40 +358,28 @@ void setup()
     );
 
     tft.init(240,240);
-
     tft.setRotation(0);
-
     drawSplash();
-
     delay(2000);
 
     Wire.begin(
         MPU_SDA,
         MPU_SCL
     );
-
-
+    
     if(!mpu.begin())
     {
         tft.fillScreen(ST77XX_RED);
-
         tft.setTextColor(ST77XX_WHITE);
-
         tft.setTextSize(2);
-
         tft.setCursor(15,110);
-
         tft.println("MPU6050 NOT FOUND");
-
         Serial.println("MPU6050 FAILED");
-
         while(true);
     }
 
     Serial.println("MPU6050 OK");
-
     drawHome();
-
     lastSecond = millis();
 }
 
@@ -440,14 +387,9 @@ void setup()
 void loop()
 {
     readMPU();
-
     checkButton();
-
     updateTimer();
-
     updateBattery();
-
     drawIMUDebug();
-
     delay(10);
 }
