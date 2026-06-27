@@ -1,4 +1,4 @@
-# ESSync Wristband
+<img width="2209" height="552" alt="image" src="https://github.com/user-attachments/assets/75bd674e-1648-47eb-8d55-133c612a67d3" /># ESSync Wristband
 
 A gesture-controlled referee wristband that automates match timing in Taekwondo. Using an accelerometer and microcontroller, it detects the referee’s calibrated start and stop gestures and wirelessly updates the central timer visible to everyone. This system removes manual jury control, ensuring accurate, fair, and transparent timekeeping.
 
@@ -142,13 +142,18 @@ Install the assembled electronics inside the case.
 ## 8. Attach a Wrist Strap
 
 The wrist strap is **not** 3D printed </3
-Please add a strap to the case! (I will be updating this with some better option in futute).
-
+It's a DIY thing you need to do with a leather sheet.
+Please add a strap to the case! (I will be updating this with a better option in the future).
 ---
 
 ## 9. Power On
 
 If assembled correctly, ESSync should be working! YAY!
+---
+
+## How to Use
+
+You'll need to calibrate your gand gestures with the watch so it can record those values and stop/start the timer the next time you use it.
 
 
 ## Bill of Materials
@@ -172,3 +177,4 @@ If assembled correctly, ESSync should be working! YAY!
 | 15 | C1 | 0.1µF | 0603 Capacitor | Decoupling Capacitor | 1 | $0.04 | https://robu.in/product/0603b104j500nt-fh-50v-100nf-x7r%C2%B15-0603-multilayer-ceramic-capacitors-mlcc-smd-smt-rohs/ |
 | 16 | — | — | PCB Fabrication | Two Custom PCBs | 2 | $2.00 | https://cart.jlcpcb.com/quote |
 | 17 | — | — | 3D Printed Case | Enclosure | 1 | $4.00 | https://zbotic.in/product/online-3d-printing-service |
+| 18 | — | — | Leather Strap | Enclosure | 1 | $0.40 | https://www.desertcart.in/products/425174482-genuine-leather-strip-1-2-inch-wide-72-inches-long |
