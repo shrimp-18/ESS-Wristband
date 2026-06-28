@@ -59,6 +59,8 @@ There is a critical need for a referee-operated, automated, and transparent timi
 | TP4056 | LiPo battery charger |
 
 ---
+<img width="487" height="320" alt="image" src="https://github.com/user-attachments/assets/ef7ec0be-c24f-4bdd-886e-fe394d52fe6d" />
+
 
 ## Top PCB
 <img width="402" height="355" alt="image" src="https://github.com/user-attachments/assets/c3c154cf-ce4e-4047-827a-db1286a75ac4" />
@@ -76,7 +78,7 @@ There is a critical need for a referee-operated, automated, and transparent timi
 <img width="655" height="374" alt="image" src="https://github.com/user-attachments/assets/6d9d1184-c0f3-431e-a021-7065daf4add2" />
 
 
-The project is made with two PCBs. The upper PCB holds the display, while the bottom PCB contains the MCU and all other components. This approach keeps the wristband compact without making it too wide. In future revisions, I plan to make it even smaller.
+The project is made with two PCBs. The upper PCB holds the display, while the bottom PCB contains the MCU and all other components. This approach keeps the wristband compact without making it too wide. In future revisions, I plan to make it even smaller. The Case closes shut using the magnets present on the bottom part of the case and the lid of the case. The PCBs are snug in the case. The bottom PCB is also mounted to the bottom case by simply fitting the PCB's holes over the protruding cylindrical parts on the inner base of the case.
 
 ---
 
@@ -85,6 +87,8 @@ The project is made with two PCBs. The upper PCB holds the display, while the bo
 https://a360.co/4gCFWl9
 
 ---
+<img width="290" height="326" alt="image" src="https://github.com/user-attachments/assets/620c7585-5d2f-49de-855a-68f5731d497f" />
+
 ## How to Build
 
 
